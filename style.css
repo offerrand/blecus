@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #000;
+    height: 1800px;
+}
+
+svg{
+    width: 500px;
+    height: 500px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+#svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px;
+    border-color: hsl(0, 0%, 40%);
+}
+
+#fon{
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:40px 40px;
+}
+
+.glow{
+    position: fixed;    
+    top: calc(9% - 0px);
+    left: calc(75% - 50px);
+    border-radius: 50%;
+    background-color: #dfaef6;
+    box-shadow:
+      0 0 60px 20px #ffffff,
+      0 0 100px 35px #f0f,
+      0 0 140px 50px #0ff;
+    filter: blur(4px);
+    animation:  moveGlowtwo 30s infinite ease-in-out;
+    z-index: 1
+
+}
+
+.unglow{
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.glow1{
+    position: fixed;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    border-radius: 50%;
+    background-color: #dfaef6;
+    box-shadow:
+      0 0 60px 20px #ffffff,
+      0 0 100px 35px #f0f,
+      0 0 140px 50px #0ff;
+    filter: blur(4px);
+    animation: moveGlow 25s infinite ease-in-out;
+    z-index: 1
+}
+
+.unglow1{
+    animation: fadeIn 2s ease-in-out;
+}
+
+.glow2{
+    position: fixed;
+    top: calc(50% - 20px);
+    left: calc(5% - 10px);
+    border-radius: 50%;
+    background-color: #dfaef6;
+    box-shadow:
+      0 0 60px 20px #ffffff,
+      0 0 100px 35px #f0f,
+      0 0 140px 50px #0ff;
+    filter: blur(4px);
+    animation: moveglowthree 45s infinite ease-in-out;
+    z-index: 1
+}
+
+.unglow2{
+    animation: fadeIn 1s ease-in-out;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonl{
+    top: 5px;
+    font-size: 20px;
+    font-family: "Montserrat";
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    animation: links 1s ease;
+    transition: 0.20s;
+}
+
+.buttonl::after{
+    position: absolute;
+    width: 100%;
+    content: '';
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #22314d;
+    border-radius: 3px;
+    transform-origin: bottom center;
+    transition: transform 0.20s ease-out;
+}
+
+.buttonl:hover::after{
+    transform: scale(1.1) scale(1);
+    transform-origin: bottom center;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    animation: links 1.2 ease-out;
+}
+
+#logo {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    animation: links 1.2 ease-out;
+}
+
+#ets2, #terraria, #valorant{
+    height: 450px;
+    width: 350px;
+    border: #22314d 4px solid;
+    border-radius: 15px;
+    color: white;
+    z-index: 15;
+    position: relative;
+    backdrop-filter: blur(75px);
+    transition: 0.40s;
+    overflow: hidden;
+    max-height: 520;
+}
+
+#products{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-right: 250px;
+    user-select: none;
+    margin-bottom: 300px;
+}
+
+.games{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+}
+
+.imgets, .imgterraria, .imgvalorant{
+    width: 300px;
+    border:#22314d 2px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#imges{
+    display: flex;
+    justify-content: center;
+}
+
+.functions{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#ets2:hover, #terraria:hover, #valorant:hover{
+    height: 500px;
+}
+
+.tableets2{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: none;
+}
+
+#tableets2{
+    display: flex;
+    justify-content: center;
+}
+
+.up{
+    width: 100%;
+    height: 70px;
+    backdrop-filter: blur(50px);
+    position: sticky;
+    top: 0;
+    z-index: 150;
+}
+
+.et2p, .acona{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: -20px
+}
+
+.acona{
+    user-select: auto;
+}
+
+.aconadiv{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#trial{
+    font-size: 38px;
+    margin-bottom: 100px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    opacity: .4;
+}
+
+.click{
+    height: 30px;
+    width: 110px;
+    border-radius: 20px;
+    background-color: hsl(235, 86%, 65%);
+    position: relative;
+    left: 220px; /* перемещение контейнера вправо на 20px */
+    top: -139px; /* перемещение контейнера вверх на 10px */
+    opacity: .7;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-decoration: solid;
+}
+
+.linkd{
+    text-decoration: none;
+    color:white;
+}
+
+.icon{
+    width: 340px;
+    z-index: 100;
+    opacity: .9;
+}
+
+.icondiv{
+    display: flex;
+    justify-content: center;
+}
+
+.textaboutblecus{
+    font-family: Montserrat;
+    color: white;
+    z-index: 100;
+    font-size: 30px;
+}
+
+.textaboutblecusdiv{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin-right: 250px;
+    margin-left: 250px;
+    margin-bottom: 200px;
+}
+
+.blecus{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    margin-top: -0.1px;
+    margin-bottom: -1px;
+    user-select: none;
+    z-index: 9999;
+    animation: opacity 2.20s ease;
+}
+
+#linksicon{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.discordicon{
+    margin-right: 650px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.youtubeicon{
+    cursor: pointer;
+    width: 200px;
+}
+
+.aboutamonglink{
+    text-align: center;
+    font-size: 150px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    z-index: 200px;
+    margin-top: -120px;
+    margin-bottom: -70px;
+    user-select: none;
+}
+
+.linkpd{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about{
+    margin-top: -100px;
+}
+
+#about{
+    width: 130px
+}
+
+#wabout{
+    display: flex;
+    justify-content: space-around;
+}
+
+.discord{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Montserrat";
+}
+
+.youtube{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Montserrat";
+}
+
+#asda{
+    width: 200px;
+    margin-top: 90px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: .0;
+    }
+
+    to {
+        opacity: .9;
+    }
+}
+
+@keyframes links {
+    0%{
+        top: -100px;
+    }
+
+    100%{
+        top: 5px;
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: .100;
+    }
+
+    100%{
+        opacity: .1;
+    }
+}
+  
+
+@keyframes moveGlow {
+    0% {
+        top: 50;
+        left: 20;
+    }
+    25% {
+        top: 40;
+        left: calc(10% - 20px);
+    }
+    50% {
+        top: calc(70% - 100px);
+        left: calc(40% - 200px);
+    }
+    60% {
+        top: calc(100% - 50px);
+        left: 50;
+    }
+    100% {
+        top: 50;
+        left: 20;
+    }
+}
+
+@keyframes moveGlowtwo {
+    0% {
+        top: 5;
+        left: 10;
+    }
+    20% {
+        top: calc(50% - 40px);
+        left: calc(100% - 50px);
+    }
+
+    50% {
+        top: calc(60% - 60px);
+        left: 100;
+    }
+    75% {
+        top: calc(70% - 60px);
+        left: calc(20% - 90px);
+    }
+    100% {
+        top: 5;
+        left: 10;
+    }
+}
+
+@keyframes moveglowthree {
+    0% {
+        top: calc(50% - 20px);
+        left: calc(5% - 10px);
+    }
+    25% {
+        top: calc(60% - 20px);
+        left: calc(70% - 50px);
+    }
+    50% {
+        top: 50;
+        left: 10;
+    }
+    75% {
+        top: calc(30% - 30px);
+        left: calc(40% - 20px);
+    }
+    100% {
+        top: calc(50% - 20px);
+        left: calc(5% - 10px);
+    }
+}
+
+@keyframes track {
+    0%{
+        top: 40%;
+        left: -1000px;
+    }
+    60%{
+        top: 40%;
+        left: -1000px;
+    }
+    100%{
+        top: 50%;
+        left: -50px;
+    }
+}
